@@ -1,0 +1,146 @@
+Thir {
+    body_type: Fn(
+        fn(),
+    ),
+    arms: [],
+    blocks: [
+        Block {
+            targeted_by_break: false,
+            region_scope: Node(1),
+            span: samples/sample1.rs:1:11: 3:2 (#0),
+            stmts: [
+                s0,
+            ],
+            expr: None,
+            safety_mode: Safe,
+        },
+    ],
+    exprs: [
+        Expr {
+            kind: Literal {
+                lit: Spanned {
+                    node: Int(
+                        Pu128(
+                            1,
+                        ),
+                        Unsuffixed,
+                    ),
+                    span: samples/sample1.rs:2:18: 2:19 (#0),
+                },
+                neg: false,
+            },
+            ty: u8,
+            temp_lifetime: TempLifetime {
+                temp_lifetime: Some(
+                    Node(2),
+                ),
+                backwards_incompatible: None,
+            },
+            span: samples/sample1.rs:2:18: 2:19 (#0),
+        },
+        Expr {
+            kind: Scope {
+                region_scope: Node(5),
+                lint_level: Explicit(
+                    HirId(DefId(0:3 ~ sample1[5ec5]::main).5),
+                ),
+                value: e0,
+            },
+            ty: u8,
+            temp_lifetime: TempLifetime {
+                temp_lifetime: Some(
+                    Node(2),
+                ),
+                backwards_incompatible: None,
+            },
+            span: samples/sample1.rs:2:18: 2:19 (#0),
+        },
+        Expr {
+            kind: Block {
+                block: b0,
+            },
+            ty: (),
+            temp_lifetime: TempLifetime {
+                temp_lifetime: Some(
+                    Node(8),
+                ),
+                backwards_incompatible: None,
+            },
+            span: samples/sample1.rs:1:11: 3:2 (#0),
+        },
+        Expr {
+            kind: Scope {
+                region_scope: Node(8),
+                lint_level: Explicit(
+                    HirId(DefId(0:3 ~ sample1[5ec5]::main).8),
+                ),
+                value: e2,
+            },
+            ty: (),
+            temp_lifetime: TempLifetime {
+                temp_lifetime: Some(
+                    Node(8),
+                ),
+                backwards_incompatible: None,
+            },
+            span: samples/sample1.rs:1:11: 3:2 (#0),
+        },
+    ],
+    stmts: [
+        Stmt {
+            kind: Let {
+                remainder_scope: Remainder { block: 1, first_statement_index: 0},
+                init_scope: Node(2),
+                pattern: Pat {
+                    ty: u8,
+                    span: samples/sample1.rs:2:9: 2:11 (#0),
+                    kind: AscribeUserType {
+                        ascription: Ascription {
+                            annotation: CanonicalUserTypeAnnotation {
+                                user_ty: Canonical {
+                                    value: UserType {
+                                        kind: Ty(
+                                            u8,
+                                        ),
+                                        bounds: [],
+                                    },
+                                    max_universe: U0,
+                                    variables: [],
+                                },
+                                span: samples/sample1.rs:2:13: 2:15 (#0),
+                                inferred_ty: u8,
+                            },
+                            variance: +,
+                        },
+                        subpattern: Pat {
+                            ty: u8,
+                            span: samples/sample1.rs:2:9: 2:11 (#0),
+                            kind: Binding {
+                                name: "_a",
+                                mode: BindingMode(
+                                    No,
+                                    Not,
+                                ),
+                                var: LocalVarId(
+                                    HirId(DefId(0:3 ~ sample1[5ec5]::main).7),
+                                ),
+                                ty: u8,
+                                subpattern: None,
+                                is_primary: true,
+                            },
+                        },
+                    },
+                },
+                initializer: Some(
+                    e1,
+                ),
+                else_block: None,
+                lint_level: Explicit(
+                    HirId(DefId(0:3 ~ sample1[5ec5]::main).6),
+                ),
+                span: samples/sample1.rs:2:5: 2:19 (#0),
+            },
+        },
+    ],
+    params: [],
+}
